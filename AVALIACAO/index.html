@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Simulador de Empréstimos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Empréstimos</h1>
+        <form id="loanForm" action="simulador.html" method="GET" onsubmit="return validateForm()">
+            <label for="valorEmprestado">Valor a ser emprestado:</label>
+            <input type="number" id="valorEmprestado" name="valorEmprestado" required>
+
+            <label for="taxaJuros">Taxa de juros ao mês (%):</label>
+            <input type="number" id="taxaJuros" name="taxaJuros" step="0.01" required>
+
+            <label for="nroParcelas">Número de parcelas:</label>
+            <input type="number" id="nroParcelas" name="nroParcelas" required>
+
+            <button type="submit">Simular Empréstimo</button>
+        </form>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
